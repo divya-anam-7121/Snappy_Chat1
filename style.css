@@ -1,13 +1,47 @@
 html, body {
     height: 100%;
     box-sizing: border-box;
+    font-family: "Roboto";
+    font-size: 14px;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
+body{
+  background-image: url("img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.main{
+  width:500px;
+  margin: auto;
+  position: relative;
+  top: 20%;
+  transform: translateY(-20%);
+}
+.logo{
+  font-size: 50px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.tagline{
+  font-size: 20px;
+}
 .button{
-  height: 50px;
   width: 200px;
-  padding:20px;
+  background-color: #184ea5;
+  color:white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover{
+  background: white;
+  color:#184ea5;
+  border: 1px;
+  border-color: #184ea5;
 }
