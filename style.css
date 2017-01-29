@@ -12,7 +12,6 @@ body.homepage{
   background-image: url("final.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 .main{
   width:500px;
@@ -55,61 +54,91 @@ button:hover{
   left: 0;
   bottom: 0;
   width: 30%;
-  background: black;
-  color: blue;
+  color: #184ea5;
+  background-color: white;
 }
 .user-info{
-  background:white;
-  padding: 10px;
+  font-size: 20px;
+  font-family: cursive;
+  background:#29487D;
+  color: white;
 
+  padding: 10px;
+    border-bottom: solid 3px #184ea5;
 }
 .logout{
+  color:white;
   float: right;
+  font-size: 20px;
 }
-.member2{
-  padding: 10px;
-  border-bottom: solid 3px white;
-}
-.member2:hover{
+.active{
   background: white;
-  color:black;
-  cursor: pointer;
 }
+
+.member-list{
+  padding: 10px;
+  border-bottom: solid 3px #184ea5;
+}
+.member-list:hover{
+  background:#29487D;
+  color:white;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: cursive;
+}
+/*chat area */
 .member-area{
-  background-color: azure;
+  background-color: white;
   position: fixed;
   left: 30%;
   top: 0;
   bottom: 0;
   width: 70%;
+  border-left: solid 3px black;
 }
 .chat-info{
-  background-color: white;
-
+  background-color:#29487D;
   padding: 10px;
-  color:black;
-}
-.member.active{
+  color:white;
+  font-family: cursive;
   font-weight: bold;
+  font-size: 20px;
+}
+.member-list.active{
+  font-weight: bold;
+  font-family: cursive;
+  background-color: white;
+  color: #184ea5;
+  font-size: 15px;
+
 }
 .messages{
-  background:lightblue;
+
+  background: whitesmoke;
   height: 80%;
   padding: 10px;
   overflow: auto;
 }
-.me{
-  background: #fff;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 4px;
 
+.me.by-user {
+    background: #4DA2CA;
+    color: white;
+    /* border: solid 3px black; */
+    font-style: normal;
+    font-family: inherit;
+    font-weight: bold;
 }
-.me.by-user{
-     background: darkgray;
-}
-.active{
-  background: white;
+
+.me {
+    background: #E5E5EA;
+    color: #29487D;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: solid 3px black;
+    font-style: italic;
+    font-weight: bold;
+    font-family: cursive;
 }
 .chat-form{
   position: fixed;
@@ -118,10 +147,11 @@ button:hover{
   width:70%;
   background: white;
   padding: 20px;
+  border-left: solid 3px black;
 }
 .chat-message{
   padding: 10px;
-  border:solid 1px darkgray;
+  border:solid 3px #29487D;
   border-radius: 4px;
   display: block;
   width:100%;
